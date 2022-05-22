@@ -1,5 +1,6 @@
 const expenseAmounts = document.querySelectorAll(".expense-amt");
 const bars = document.querySelectorAll(".bar");
+const tooltips = document.querySelectorAll(".tooltip");
 const maxBarHeight = 150;
 
 const fetchData = async () => {
@@ -10,6 +11,7 @@ const fetchData = async () => {
     data.forEach((ele, idx) => {
       const amount = ele.amount;
       expenseAmounts[idx].textContent = amount;
+      tooltips[idx].textContent = `$${amount}`;
       bars[idx].style.height = `${Math.round(
         (amount / maxAmount) * maxBarHeight
       )}px`;
