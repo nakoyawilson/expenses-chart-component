@@ -14,12 +14,74 @@
 
     <title>Frontend Mentor | Expenses chart component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
-    this month $478.33 +2.4% from last month
+    <main class="main">
+      <h1 class="visually-hidden">Expenses chart</h1>
+      <section class="header">
+        <h2 class="main-heading">My balance</h2>
+        <h3 class="total-balance">$921.48</h3>
+      </section>
+      <section class="chart">
+        <h2 class="chart-title">Spending - Last 7 days</h2>
+        <div class="grid">
+          <div class="bar-wrapper">
+            <div class="bar"></div>
+            <h3 class="label">
+              mon<span class="visually-hidden expense-amt"></span>
+            </h3>
+          </div>
+          <div class="bar-wrapper">
+            <div class="bar"></div>
+            <h3 class="label">
+              tue<span class="visually-hidden expense-amt"></span>
+            </h3>
+          </div>
+          <div class="bar-wrapper">
+            <div class="bar current-day"></div>
+            <h3 class="label">
+              wed<span class="visually-hidden expense-amt"></span>
+            </h3>
+          </div>
+          <div class="bar-wrapper">
+            <div class="bar"></div>
+            <h3 class="label">
+              thu<span class="visually-hidden expense-amt"></span>
+            </h3>
+          </div>
+          <div class="bar-wrapper">
+            <div class="bar"></div>
+            <h3 class="label">
+              fri<span class="visually-hidden expense-amt"></span>
+            </h3>
+          </div>
+          <div class="bar-wrapper">
+            <div class="bar"></div>
+            <h3 class="label">
+              sat<span class="visually-hidden expense-amt"></span>
+            </h3>
+          </div>
+          <div class="bar-wrapper">
+            <div class="bar"></div>
+            <h3 class="label">
+              sun<span class="visually-hidden expense-amt"></span>
+            </h3>
+          </div>
+        </div>
+        <div class="summary">
+          <div>
+            <h2 class="caption">Total this month</h2>
+            <h3 class="month-total">$478.33</h3>
+          </div>
+          <div>
+            <span class="percentage">+2.4%</span>
+            <span class="caption">from last month</span>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <p class="attribution">
         Challenge by
