@@ -231,11 +231,11 @@ span {
   .grid {
     margin: 6.6rem auto 3.2rem;
     justify-content: space-between;
-    gap: 1.2rem;
+    gap: 1.75rem;
   }
 
   .bar-wrapper {
-    width: 5.36rem;
+    width: 5.036rem;
     gap: 0.8rem;
   }
 
@@ -280,7 +280,7 @@ span {
   }
 
   .summary {
-    padding-top: 3.2rem;
+    padding-top: 3.5rem;
   }
 
   .caption {
