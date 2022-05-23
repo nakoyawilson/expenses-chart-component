@@ -11,6 +11,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
+  - [Optimizations](#optimizations)
 - [Author](#author)
 
 ## Overview
@@ -47,6 +48,10 @@ Users should be able to:
 ### Useful resources
 
 - [CSS Tooltip](https://www.w3schools.com/css/css_tooltip.asp)
+
+### Optimizations
+
+- Animate chart on loading
 
 ## Author
 
