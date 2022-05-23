@@ -30,6 +30,11 @@ body {
   background: var(--cream);
   font-family: var(--priamry-font);
   font-size: 1.8rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
 }
 
 span {
@@ -52,7 +57,7 @@ span {
 
 .main {
   width: 91.46667%;
-  margin: 6.7rem auto;
+  margin: auto;
 }
 
 .header {
@@ -175,6 +180,24 @@ span {
   color: var(--dark-brown);
 }
 
+.tooltip {
+  visibility: hidden;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: var(--very-pale-orange);
+  background: var(--dark-brown);
+  border-radius: 5px;
+  padding: 0.9rem 0.9rem 0.8rem 0.8rem;
+  width: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -4.8rem;
+  z-index: 1;
+}
+
 /* Attribution */
 
 .attribution {
@@ -191,7 +214,6 @@ span {
 
   .main {
     width: min(91.46667%, 540px);
-    margin: 18.2rem auto;
   }
 
   .header {
@@ -242,24 +264,6 @@ span {
   .bar {
     border-radius: 5px;
     position: relative;
-  }
-
-  .tooltip {
-    visibility: hidden;
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    color: var(--very-pale-orange);
-    background: var(--dark-brown);
-    border-radius: 5px;
-    padding: 0.9rem 0.9rem 0.8rem 0.8rem;
-    width: 7.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -4.8rem;
-    z-index: 1;
   }
 
   .bar:hover {

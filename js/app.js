@@ -3,6 +3,9 @@ const bars = document.querySelectorAll(".bar");
 const tooltips = document.querySelectorAll(".tooltip");
 const maxBarHeight = 150;
 
+const currentDate = new Date().getDay();
+const dateIndex = currentDate !== 0 ? currentDate - 1 : 6;
+
 const fetchData = async () => {
   try {
     const res = await fetch("./js/data.json");
@@ -15,6 +18,9 @@ const fetchData = async () => {
       bars[idx].style.height = `${Math.round(
         (amount / maxAmount) * maxBarHeight
       )}px`;
+      if (dateIndex === idx) {
+        bars[idx].classList.add("current-day");
+      }
     });
   } catch (err) {
     console.log(err);
