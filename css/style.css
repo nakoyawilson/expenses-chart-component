@@ -7,7 +7,7 @@
   --dark-brown: hsl(25, 47%, 15%);
   --medium-brown: hsl(28, 10%, 53%);
   --cream: hsl(27, 66%, 92%);
-  --very-pale-orange: hsl(33, 100%, 98%);
+  --very-pale-orange: hsl(30, 100%, 98%);
   --white: hsl(0, 0%, 100%);
   --blue: hsl(228, 45%, 44%);
   --blue-hover: hsla(186, 49%, 80%, 1);
@@ -235,7 +235,7 @@ span {
   }
 
   .bar-wrapper {
-    width: 5rem;
+    width: 5.36rem;
     gap: 0.8rem;
   }
 
@@ -297,5 +297,9 @@ span {
   .percentage {
     font-size: 1.8rem;
     line-height: 2.3rem;
+  }
+
+  .percentage + .caption {
+    margin: 0.1rem 0 0.9rem;
   }
 }
