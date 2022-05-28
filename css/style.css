@@ -30,11 +30,6 @@ body {
   background: var(--cream);
   font-family: var(--priamry-font);
   font-size: 1.8rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2.4rem;
 }
 
 span {
@@ -57,7 +52,7 @@ span {
 
 .main {
   width: 91.46667%;
-  margin: auto;
+  margin: 6.7rem auto 6.6rem;
 }
 
 .header {
@@ -216,6 +211,7 @@ span {
 
   .main {
     width: min(91.46667%, 540px);
+    margin: 18.2rem auto;
   }
 
   .header {
